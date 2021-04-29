@@ -1,5 +1,4 @@
-window.addEventListener("load", function() {
-
+function pullDown() {
   const pullDownButton = document.getElementById("lists");
   const pullDownParents = document.getElementById("pull-down");
   // querySelectorAllメソッドでHTML要素を取得し、配列で格納
@@ -29,5 +28,7 @@ window.addEventListener("load", function() {
       currentList.innerHTML = value;  // innerHTMLでHTML要素を書き換え
     });
   });
-});
+}
+
+window.addEventListener("load", pullDown);
 
